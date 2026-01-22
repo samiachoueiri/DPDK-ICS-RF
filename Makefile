@@ -5,7 +5,7 @@
 APP = ics_app
 
 # all source are stored in SRCS-y
-SRCS-y := modbus.c
+SRCS-y := modbus_rf.c
 
 PKGCONF ?= pkg-config
 
