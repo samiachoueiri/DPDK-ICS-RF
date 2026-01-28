@@ -2,10 +2,10 @@
 # Copyright(c) 2010-2014 Intel Corporation
 
 # binary name
-APP = ics_app
+APP = rf_app
 
 # all source are stored in SRCS-y
-SRCS-y := modbus_rf.c
+SRCS-y := lat_rf.c
 
 PKGCONF ?= pkg-config
 
@@ -23,10 +23,9 @@ static: build/$(APP)-static
 
 PC_FILE := $(shell $(PKGCONF) --path libdpdk 2>/dev/null)
 CFLAGS += -O3 $(shell $(PKGCONF) --cflags libdpdk)
-#CFLAGS += -march=armv8-a+crc
-CFLAGS += -mcpu=cortex-a78ae
-LDFLAGS_SHARED = $(shell $(PKGCONF) --libs libdpdk)
-LDFLAGS_STATIC = $(shell $(PKGCONF) --static --libs libdpdk)
+CFLAGS += -march=armv8-a+crc
+LDFLAGS_SHARED = $(shell $(PKGCONF) --libs libdpdk) -ljansson -lz
+LDFLAGS_STATIC = $(shell $(PKGCONF) --static --libs libdpdk) -ljansson -lz
 
 ifeq ($(MAKECMDGOALS),static)
 # check for broken pkg-config

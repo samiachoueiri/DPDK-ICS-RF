@@ -1,0 +1,5 @@
+rf_ws8_depth32_est1.json  - acc: 0.913231% - mem: 0.78 MB
+rf_ws8_depth32_est5.json  - acc: 0.953474% - mem: 3.50 MB
+rf_ws8_depth32_est10.json - acc: 0.965496% - mem: 7.19 MB
+rf_ws8_depth32_est25.json - acc: 0.980423% - mem: 18.08 MB
+rf_ws8_depth32_est50.json - acc: 0.991828% - mem: 36.15 MB

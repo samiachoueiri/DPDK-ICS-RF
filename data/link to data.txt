@@ -1,0 +1,9 @@
+@dataset{sudyana_2025_17165850,
+  author       = {Sudyana, Didik},
+  title        = {{ICS Dataset}},
+  month        = sep,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17165850},
+  url          = {https://doi.org/10.5281/zenodo.17165850},
+}

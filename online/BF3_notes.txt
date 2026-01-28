@@ -1,0 +1,134 @@
+host -------------------------------------
+ 413  git clone https://github.com/samiachoueiri/DPDK-ICS-RF.git
+  414  ls
+  415  ifconfig
+  416  mkdir
+  417  mkdir rf
+  418  cd rf
+  419  ls
+  420  cd ..
+  421  ls
+  422  scp -r rf/ ubuntu@192.168.100.2:/home/ubuntu
+  423  ls
+  424  cd rf/
+  425  ls
+  426  vim Makefile 
+  427  make
+  428  vim MA
+  429  vim Makefile 
+  430  make
+  431  vim Makefile 
+  432  make
+  433  vim Makefile 
+  434  make
+  435  cd ..
+  436  scp -r rf/ ubuntu@192.168.100.2:/home/ubuntu
+  437  scp -r rf/*.c ubuntu@192.168.100.2:/home/ubuntu
+  438  scp -r rf/Makefile  ubuntu@192.168.100.2:/home/ubuntu
+  439  scp -r rf/*.c  ubuntu@192.168.100.2:/home/ubuntu/rf
+  440  ls ~/.ssh/id_ed25519.pub ~/.ssh/id_rsa.pub
+
+DPU ------------------------------------------------------
+379  cat Makefile 
+  380  make
+  381  ls
+  382  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  383  ls
+  384  make
+  385  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  386  ls
+  387  wc -l latencies.csv 
+  388  head latencies.csv 
+  389  ls
+  390  mv latencies.csv latencies_rf_ws8_depth32_est1.csv
+  391  ls
+  392  make
+  393  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  394  ls
+  395  make
+  396  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  397  make
+  398  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  399  ls
+  400  head latencies.csv 
+  401  wc -l latencies.csv 
+  402  make
+  403  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  404  ls
+  405  wc -l latencies.csv 
+  406  mv latencies.csv latencies_rf_ws8_depth32_est5.csv
+  407  head latencies_rf_ws8_depth32_est5.csv 
+  408  make
+  409  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  410  make
+  411  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  412  htop
+  413  make
+  414  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  415  make
+  416  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  417  make
+  418  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  419  make
+  420  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  421  make
+  422  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  423  make
+  424  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  425  make
+  426  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  427  make
+  428  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  429  ls
+  430  make
+  431  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  432  make
+  433  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  434  ls
+  435  head latencies.csv 
+  436  mv latencies.csv latencies_rf_ws8_depth32_est10.csv
+  437  ls
+  438  make
+  439  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  440  mv latencies.csv latencies_rf_ws8_depth32_est25.csv
+  441  head latencies_rf_ws8_depth32_est25.csv 
+  442  make
+  443  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  444  mv latencies.csv latencies_rf_ws8_depth32_est50.csv
+  445  head latencies_rf_ws8_depth32_est50.csv 
+  446  ls
+  447  make
+  448  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  449  make
+  450  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  451  make
+  452  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  453  make
+  454  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  455  make
+  456  ./build/rf_app -l 0 -n 4 -a 03:00.0 -- -p 0x1 -P
+  457  ls
+  458  cd ..
+  459  scp -r rf/* ubuntu@192.168.100.1:/home/ubuntu/online
+  460  history
+root@localhost:/home/ubuntu# 
+
+Proxy config ---------------------------------------
+Host NodeDPU
+    HostName 2001:400:a100:3040:f816:3eff:fed9:1a37
+    User ubuntu
+    IdentityFile C:\Users\elizalds\.ssh\my_sliver_key
+    ProxyJump elizalds_0000163919@bastion.fabric-testbed.net:22
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+    ServerAliveInterval 120
+Host DPU
+    HostName 192.168.100.2
+    User ubuntu
+    IdentityFile C:\Users\elizalds\.ssh\slice_key
+    ProxyJump NodeDPU
+    ForwardAgent yes
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+    ServerAliveInterval 120
+
