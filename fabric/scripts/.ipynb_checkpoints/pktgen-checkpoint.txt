@@ -1,5 +1,0 @@
-set 0 src mac 02:d0:a8:73:f9:e3
-set 0 dst mac e8:9e:49:4e:ff:9b
-set 0 src ip 10.0.0.2/24
-set 0 dst ip 10.0.0.1
-set 0 size 1500
