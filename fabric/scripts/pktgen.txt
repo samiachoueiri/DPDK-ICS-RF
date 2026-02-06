@@ -1,5 +1,14 @@
+sudo pktgen -l 0,1 -n 4 -a 07:00.0 -- -P -m "1.0"
+
 set 0 src mac 02:d0:a8:73:f9:e3
 set 0 dst mac e8:9e:49:4e:ff:9b
 set 0 src ip 10.0.0.2/24
 set 0 dst ip 10.0.0.1
 set 0 size 1500
+
+sudo pktgen -l 0,1 -n 4 -a 07:00.0 -- -P -m "1.0" -s P:/home/ubuntu/raw_data/fault/output_fault.pcap
+
+Pktgen:/> enable 0 pcap
+Pktgen:/> pcap show
+PCAP file for port 0: /home/ubuntu/raw_data/fault/output_fault.pcap
+  magic: a1b2c3d4, Version: 2.4, Zone: 0, snaplen: 65535, sigfigs: 0, network: 1 Convert Endian: No
