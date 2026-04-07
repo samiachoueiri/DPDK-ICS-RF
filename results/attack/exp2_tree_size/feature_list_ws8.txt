@@ -1,0 +1,8 @@
+modbus_req_count
+pkt_size_mean
+modbus_resp_count
+pkt_size_max
+iat_max
+iat_mean
+pkt_size_min
+iat_min

@@ -2,3 +2,6 @@
 */.ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
+# Ignore training feature folders
+offline/attack_trained_features/
+offline/fault_training_features/
