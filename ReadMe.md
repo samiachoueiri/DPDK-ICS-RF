@@ -69,34 +69,6 @@ The C implementation uses heap-allocated tree arrays to prevent stack overflow o
 
 ---
 
-## Results
-
-### Fault Detection (ws=8, depth=32)
-
-| Metric | Value |
-|---|---|
-| Accuracy | **89.5%** |
-| ROC-AUC | **96.4%** |
-| Precision (fault class) | 0.88 |
-| Recall (fault class) | 0.93 |
-| F1 (fault class) | 0.91 |
-| Test samples | 6,882 |
-
-Accuracy across window sizes (8 features):
-
-| Window size | Accuracy |
-|---|---|
-| ws4 | 86.3% |
-| ws8 | 87.5% |
-| ws16 | 87.7% |
-| ws32 | 89.1% |
-
-### Latency (on BlueField-3, ws=8, depth=32)
-
-Inference latency was measured per-sample on the DPU using `rte_rdtsc` cycle counters. Results are reported as CDFs across 1, 5, 10, 25, and 50-tree configurations — see [`results/fault/figures.ipynb`](results/fault/figures.ipynb) for the full plots.
-
----
-
 ## Setup & Build
 
 ### 1. Environment (BlueField-3 DPU)
