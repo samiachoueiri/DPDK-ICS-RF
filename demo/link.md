@@ -1,1 +1,1 @@
-[text](https://research.cec.sc.edu/cyberinfra/knit12)
+[Link to Agenda](https://research.cec.sc.edu/cyberinfra/knit12)
