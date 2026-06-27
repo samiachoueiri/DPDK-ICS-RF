@@ -1,0 +1,258 @@
+raw_ics_data
+└── raw_data
+    ├── analysis
+    │   ├── Result
+    │   │   ├── syslog
+    │   │   │   ├── syslog_anomaly_detection.csv
+    │   │   │   ├── syslog_anomaly_detection.csvZone.Identifier
+    │   │   │   ├── syslog_anomaly_detection_results.csv
+    │   │   │   ├── syslog_anomaly_detection_results.csvZone.Identifier
+    │   │   │   ├── syslog_parsed.csv
+    │   │   │   ├── syslog_parsed.csvZone.Identifier
+    │   │   │   ├── syslog_test_data_with_labels.csv
+    │   │   │   ├── syslog_test_data_with_labels.csvZone.Identifier
+    │   │   │   ├── syslog_text_anomaly_detection_results.csv
+    │   │   │   └── syslog_text_anomaly_detection_results.csvZone.Identifier
+    │   │   ├── traffic
+    │   │   │   ├── flow_features.csv
+    │   │   │   ├── flow_features.csvZone.Identifier
+    │   │   │   ├── logs
+    │   │   │   │   ├── traffic_dataset_generation.log
+    │   │   │   │   └── traffic_dataset_generation.logZone.Identifier
+    │   │   │   ├── normal_cleaned_flow.csv
+    │   │   │   ├── normal_cleaned_flow.csvZone.Identifier
+    │   │   │   ├── normal_traffic_2025-01-09_22_43_09.csv
+    │   │   │   ├── normal_traffic_2025-01-09_22_43_09.csvZone.Identifier
+    │   │   │   ├── normal_traffic_2025-01-09_22_43_09_modbus.csv
+    │   │   │   ├── normal_traffic_2025-01-09_22_43_09_modbus.csvZone.Identifier
+    │   │   │   ├── normal_traffic_preprocess.py
+    │   │   │   ├── normal_traffic_preprocess.pyZone.Identifier
+    │   │   │   ├── traffic_dataset_generation.log
+    │   │   │   └── traffic_dataset_generation.logZone.Identifier
+    │   │   ├── traffic_dataset_generation.log
+    │   │   └── traffic_dataset_generation.logZone.Identifier
+    │   ├── fault vs normal violin plot.png
+    │   ├── fault vs normal violin plot.pngZone.Identifier
+    │   ├── fault vs normal violin plot.pngZone.IdentifierZone.Identifier
+    │   ├── normal vs system fault comparison.png
+    │   ├── normal vs system fault comparison.pngZone.Identifier
+    │   ├── normal vs system fault comparison.pngZone.IdentifierZone.Identifier
+    │   ├── output (1).pngZone.Identifier
+    │   ├── output (1).pngZone.IdentifierZone.Identifier
+    │   ├── output (2).pngZone.Identifier
+    │   ├── output (2).pngZone.IdentifierZone.Identifier
+    │   ├── output (3).pngZone.Identifier
+    │   ├── output (3).pngZone.IdentifierZone.Identifier
+    │   ├── output (4).pngZone.Identifier
+    │   ├── output (4).pngZone.IdentifierZone.Identifier
+    │   ├── output (5).pngZone.Identifier
+    │   ├── output (5).pngZone.IdentifierZone.Identifier
+    │   ├── output (6).pngZone.Identifier
+    │   ├── output (6).pngZone.IdentifierZone.Identifier
+    │   ├── visual comparison fault vs norml.pngZone.Identifier
+    │   └── visual comparison fault vs norml.pngZone.IdentifierZone.Identifier
+    ├── attack
+    │   ├── attack_snapshots_PLC1.csv
+    │   ├── attack_snapshots_PLC1.csvZone.Identifier
+    │   ├── attack_snapshots_PLC2.csv
+    │   ├── attack_snapshots_PLC2.csvZone.Identifier
+    │   ├── normal_traffic_2025-02-11_20_27_15.pcap
+    │   ├── normal_traffic_2025-02-11_20_27_15.pcapZone.Identifier
+    │   ├── normal_traffic_2025-02-11_20_27_15.pcapZone.IdentifierZone.Identifier
+    │   ├── snapshots_PLC1.csvZone.Identifier
+    │   ├── snapshots_PLC1.csvZone.IdentifierZone.Identifier
+    │   ├── snapshots_PLC2.csvZone.Identifier
+    │   ├── snapshots_PLC2.csvZone.IdentifierZone.Identifier
+    │   └── syslog
+    │       ├── attacker_machine_summary.csv
+    │       ├── attacker_machine_summary.csvZone.Identifier
+    │       ├── attacker_machine_summary.csvZone.IdentifierZone.Identifier
+    │       ├── attacker_remote_summary.csv
+    │       ├── attacker_remote_summary.csvZone.Identifier
+    │       ├── attacker_remote_summary.csvZone.IdentifierZone.Identifier
+    │       ├── attacker_summary.csv
+    │       ├── attacker_summary.csvZone.Identifier
+    │       ├── attacker_summary.csvZone.IdentifierZone.Identifier
+    │       ├── log-ddos.txt
+    │       ├── log-ddos.txtZone.Identifier
+    │       ├── log-ddos.txtZone.IdentifierZone.Identifier
+    │       ├── log-mitm-scapy.txt
+    │       ├── log-mitm-scapy.txtZone.Identifier
+    │       ├── log-mitm-scapy.txtZone.IdentifierZone.Identifier
+    │       ├── log-replay-scapy.txt
+    │       ├── log-replay-scapy.txtZone.Identifier
+    │       ├── log-replay-scapy.txtZone.IdentifierZone.Identifier
+    │       ├── log-scan-nmap.txt
+    │       ├── log-scan-nmap.txtZone.Identifier
+    │       ├── log-scan-nmap.txtZone.IdentifierZone.Identifier
+    │       ├── log-scan-scapy.txt
+    │       ├── log-scan-scapy.txtZone.Identifier
+    │       ├── log-scan-scapy.txtZone.IdentifierZone.Identifier
+    │       ├── logs-AgentInputValve.log
+    │       ├── logs-AgentInputValve.logZone.Identifier
+    │       ├── logs-AgentInputValve.logZone.IdentifierZone.Identifier
+    │       ├── logs-Factory.log
+    │       ├── logs-Factory.logZone.Identifier
+    │       ├── logs-Factory.logZone.IdentifierZone.Identifier
+    │       ├── logs-HMI1.log
+    │       ├── logs-HMI1.logZone.Identifier
+    │       ├── logs-HMI1.logZone.IdentifierZone.Identifier
+    │       ├── logs-HMI2.log
+    │       ├── logs-HMI2.logZone.Identifier
+    │       ├── logs-HMI2.logZone.IdentifierZone.Identifier
+    │       ├── logs-HMI3.log
+    │       ├── logs-HMI3.logZone.Identifier
+    │       ├── logs-HMI3.logZone.IdentifierZone.Identifier
+    │       ├── logs-PLC1.log
+    │       ├── logs-PLC1.logZone.Identifier
+    │       ├── logs-PLC1.logZone.IdentifierZone.Identifier
+    │       ├── logs-PLC2.log
+    │       ├── logs-PLC2.logZone.Identifier
+    │       ├── logs-PLC2.logZone.IdentifierZone.Identifier
+    │       ├── logs-attacker.log
+    │       ├── logs-attacker.logZone.Identifier
+    │       ├── logs-attacker.logZone.IdentifierZone.Identifier
+    │       ├── logs-attacker_machine.log
+    │       ├── logs-attacker_machine.logZone.Identifier
+    │       ├── logs-attacker_machine.logZone.IdentifierZone.Identifier
+    │       ├── logs-attacker_remote.log
+    │       ├── logs-attacker_remote.logZone.Identifier
+    │       └── logs-attacker_remote.logZone.IdentifierZone.Identifier
+    ├── fault
+    │   ├── all_logs.log
+    │   ├── all_logs.logZone.Identifier
+    │   ├── all_logs.logZone.IdentifierZone.Identifier
+    │   ├── faults_traffic_2025-01-10_03_22_36.pcap
+    │   ├── faults_traffic_2025-01-10_03_22_36.pcapZone.Identifier
+    │   ├── faults_traffic_2025-01-10_03_22_36.pcapZone.IdentifierZone.Identifier
+    │   ├── sensor
+    │   │   ├── faults_snapshots_PLC1.csv
+    │   │   ├── faults_snapshots_PLC1.csvZone.Identifier
+    │   │   ├── faults_snapshots_PLC1.csvZone.IdentifierZone.Identifier
+    │   │   ├── faults_snapshots_PLC2.csv
+    │   │   ├── faults_snapshots_PLC2.csvZone.Identifier
+    │   │   └── faults_snapshots_PLC2.csvZone.IdentifierZone.Identifier
+    │   └── syslog
+    │       ├── 03_.log
+    │       ├── 03_.logZone.Identifier
+    │       ├── 03_.logZone.IdentifierZone.Identifier
+    │       ├── 04_.log
+    │       ├── 04_.logZone.Identifier
+    │       ├── 04_.logZone.IdentifierZone.Identifier
+    │       ├── 05_.log
+    │       ├── 05_.logZone.Identifier
+    │       ├── 05_.logZone.IdentifierZone.Identifier
+    │       ├── 06_.log
+    │       ├── 06_.logZone.Identifier
+    │       ├── 06_.logZone.IdentifierZone.Identifier
+    │       ├── all_logs.log
+    │       ├── all_logs.logZone.Identifier
+    │       ├── all_logs.logZone.IdentifierZone.Identifier
+    │       ├── attacker[826]_.log
+    │       ├── attacker[826]_.logZone.Identifier
+    │       ├── attacker[826]_.logZone.IdentifierZone.Identifier
+    │       ├── attackermachine[826]_.log
+    │       ├── attackermachine[826]_.logZone.Identifier
+    │       ├── attackermachine[826]_.logZone.IdentifierZone.Identifier
+    │       ├── attackerremote[826]_.log
+    │       ├── attackerremote[826]_.logZone.Identifier
+    │       ├── attackerremote[826]_.logZone.IdentifierZone.Identifier
+    │       ├── hmi1[826]_.log
+    │       ├── hmi1[826]_.logZone.Identifier
+    │       ├── hmi1[826]_.logZone.IdentifierZone.Identifier
+    │       ├── hmi2[826]_.log
+    │       ├── hmi2[826]_.logZone.Identifier
+    │       ├── hmi2[826]_.logZone.IdentifierZone.Identifier
+    │       ├── hmi3[826]_.log
+    │       ├── hmi3[826]_.logZone.Identifier
+    │       ├── hmi3[826]_.logZone.IdentifierZone.Identifier
+    │       ├── kernel_.log
+    │       ├── kernel_.logZone.Identifier
+    │       ├── kernel_.logZone.IdentifierZone.Identifier
+    │       ├── plc1[826]_.log
+    │       ├── plc1[826]_.logZone.Identifier
+    │       ├── plc1[826]_.logZone.IdentifierZone.Identifier
+    │       ├── plc2[826]_.log
+    │       ├── plc2[826]_.logZone.Identifier
+    │       ├── plc2[826]_.logZone.IdentifierZone.Identifier
+    │       ├── pys[826]_.log
+    │       ├── pys[826]_.logZone.Identifier
+    │       ├── pys[826]_.logZone.IdentifierZone.Identifier
+    │       ├── rsyslogd_.log
+    │       ├── rsyslogd_.logZone.Identifier
+    │       └── rsyslogd_.logZone.IdentifierZone.Identifier
+    └── normal
+        ├── all_logs.log
+        ├── all_logs.logZone.Identifier
+        ├── all_logs.logZone.IdentifierZone.Identifier
+        ├── normal_traffic_2025-01-09_22_43_09.pcap
+        ├── normal_traffic_2025-01-09_22_43_09.pcapZone.Identifier
+        ├── normal_traffic_2025-01-09_22_43_09.pcapZone.IdentifierZone.Identifier
+        ├── sensor
+        │   ├── normal_snapshots_PLC1.csv
+        │   ├── normal_snapshots_PLC1.csvZone.Identifier
+        │   ├── normal_snapshots_PLC1.csvZone.IdentifierZone.Identifier
+        │   ├── normal_snapshots_PLC2.csv
+        │   ├── normal_snapshots_PLC2.csvZone.Identifier
+        │   └── normal_snapshots_PLC2.csvZone.IdentifierZone.Identifier
+        └── syslog
+            ├── 00_.log
+            ├── 00_.logZone.Identifier
+            ├── 00_.logZone.IdentifierZone.Identifier
+            ├── 01_.log
+            ├── 01_.logZone.Identifier
+            ├── 01_.logZone.IdentifierZone.Identifier
+            ├── 02_.log
+            ├── 02_.logZone.Identifier
+            ├── 02_.logZone.IdentifierZone.Identifier
+            ├── 03_.log
+            ├── 03_.logZone.Identifier
+            ├── 03_.logZone.IdentifierZone.Identifier
+            ├── 22_.log
+            ├── 22_.logZone.Identifier
+            ├── 22_.logZone.IdentifierZone.Identifier
+            ├── 23_.log
+            ├── 23_.logZone.Identifier
+            ├── 23_.logZone.IdentifierZone.Identifier
+            ├── all_logs.log
+            ├── all_logs.logZone.Identifier
+            ├── all_logs.logZone.IdentifierZone.Identifier
+            ├── attacker[826]_.log
+            ├── attacker[826]_.logZone.Identifier
+            ├── attacker[826]_.logZone.IdentifierZone.Identifier
+            ├── attackermachine[826]_.log
+            ├── attackermachine[826]_.logZone.Identifier
+            ├── attackermachine[826]_.logZone.IdentifierZone.Identifier
+            ├── attackerremote[826]_.log
+            ├── attackerremote[826]_.logZone.Identifier
+            ├── attackerremote[826]_.logZone.IdentifierZone.Identifier
+            ├── hmi1[826]_.log
+            ├── hmi1[826]_.logZone.Identifier
+            ├── hmi1[826]_.logZone.IdentifierZone.Identifier
+            ├── hmi2[826]_.log
+            ├── hmi2[826]_.logZone.Identifier
+            ├── hmi2[826]_.logZone.IdentifierZone.Identifier
+            ├── hmi3[826]_.log
+            ├── hmi3[826]_.logZone.Identifier
+            ├── hmi3[826]_.logZone.IdentifierZone.Identifier
+            ├── kernel_.log
+            ├── kernel_.logZone.Identifier
+            ├── kernel_.logZone.IdentifierZone.Identifier
+            ├── logs_parsed.csv
+            ├── logs_parsed.csvZone.Identifier
+            ├── plc1[826]_.log
+            ├── plc1[826]_.logZone.Identifier
+            ├── plc1[826]_.logZone.IdentifierZone.Identifier
+            ├── plc2[826]_.log
+            ├── plc2[826]_.logZone.Identifier
+            ├── plc2[826]_.logZone.IdentifierZone.Identifier
+            ├── pys[826]_.log
+            ├── pys[826]_.logZone.Identifier
+            ├── pys[826]_.logZone.IdentifierZone.Identifier
+            ├── rsyslogd_.log
+            ├── rsyslogd_.logZone.Identifier
+            ├── rsyslogd_.logZone.IdentifierZone.Identifier
+            ├── syslog_normal.ipynb
+            └── syslog_normal.ipynbZone.Identifier
+
+14 directories, 241 files
