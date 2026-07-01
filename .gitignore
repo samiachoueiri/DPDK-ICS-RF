@@ -8,3 +8,8 @@ offline/fault_training_features/
 
 results/attack/exp2_tree_size/pkl/
 *.pkl
+# Hugging Face training checkpoints
+offline/slm_syslog_fault_model/checkpoint-*/
+
+# Large SLM model weights
+offline/slm_syslog_fault_model/model.safetensors

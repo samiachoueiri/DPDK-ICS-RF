@@ -7,3 +7,7 @@
   doi          = {10.5281/zenodo.17165850},
   url          = {https://doi.org/10.5281/zenodo.17165850},
 }
+
+link:https://zenodo.org/records/17165850
+
+dowload: wget https://zenodo.org/records/17165850/files/raw_data.zip?download=1
